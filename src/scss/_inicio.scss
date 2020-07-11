@@ -5,7 +5,7 @@
 
   .inicio-left,
   .inicio-right {
-    height: 620px;
+    height: 700px;
   }
 
   .inicio-left {
@@ -25,6 +25,7 @@
 
   .inicio-right {
     width: 50%;
+    padding-top: 65px;
     background-color: $color2;
     display: flex;
     align-items: center;
@@ -39,9 +40,13 @@
     }
     .inicio-img {
       margin-top: 20px;
-      width: 350px;
+      width: 300px;
       height: auto;
       border: 12px solid $color1;
+    }
+    .inicio-detail {
+      width: 350px;
+      margin: 20px 0 0 0;
     }
   }
 }

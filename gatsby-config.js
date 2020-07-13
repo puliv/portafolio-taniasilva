@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portafolio Tania Silva`,
-    description: `Portafolio Tania Silva Diseñadora Industrial & UX.`,
+    title: `TS`,
+    description: `Tania Silva Diseñadora Industrial & UX`,
     author: `@puliv`,
   },
   plugins: [

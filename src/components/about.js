@@ -2,12 +2,11 @@ import React from "react"
 // import { graphql } from 'gatsby'
 // import Img from 'gatsby-image'
 import detail from "../images/detail_2.png"
-// import AboutImg from "./aboutImg"
 
 
 const about = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-text">
         <div className="about-left">
           <div className="about-img">
@@ -43,8 +42,6 @@ const about = () => {
         <div className="about-list">
           <div className="about-item 1">
             <div className="about-item-img">
-              {/* <Img fixed={data.aboutIcon1.childImageSharp.fixed} alt="uno" /> */}
-              {/* <AboutImg /> */}
             </div>
             <div className="about-item-text">
               <h4>INVESTIGACIÓN Y ESTRATEGÍA UX</h4>

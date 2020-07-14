@@ -3,7 +3,7 @@ import Image from "../components/image"
 import detail from "../images/detail_1.png"
 
 const Inicio = () => (
-  <section className="inicio">
+  <section className="inicio" id="inicio">
     <div className="inicio-left">
       <h1>¡Hola!</h1>
       <h1>Soy Tania Silva</h1>

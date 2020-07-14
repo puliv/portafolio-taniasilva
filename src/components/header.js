@@ -1,5 +1,5 @@
 import React from "react"
-// import PropTypes from "prop-types"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header = () => (
   <header className="nav">
@@ -9,21 +9,13 @@ const Header = () => (
 
     <div className="nav-right">
       <ul>
-        <li>INICIO</li>
-        <li>SOBRE MI</li>
-        <li>PROYECTOS</li>
-        <li>CONTÁCTAME</li>
+        <li onClick={() => scrollTo('#inicio')}>INICIO</li>
+        <li onClick={() => scrollTo('#about')}>SOBRE MI</li>
+        <li onClick={() => scrollTo('#proyects')}>PROYECTOS</li>
+        <li onClick={() => scrollTo('#contact')}>CONTÁCTAME</li>
       </ul>
     </div>
   </header>
 )
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
 
 export default Header

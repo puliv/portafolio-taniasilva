@@ -60,3 +60,38 @@
     }
   }
 }
+
+@media screen and (max-width: 920px) {
+  .contact {
+    background-color: $color2;
+    display: flex;
+    justify-content: center;
+    div {
+      width: 500px;
+      padding: 40px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact {
+    background-color: $color2;
+    display: flex;
+    justify-content: center;
+    div {
+      width: 100%;
+      padding: 40px 0 0;
+      img {
+        width: 85%;
+      }
+      ul {
+        li {
+          img {
+            width: 55px;
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

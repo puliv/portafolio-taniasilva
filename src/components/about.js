@@ -1,7 +1,8 @@
 import React from "react"
-// import { graphql } from 'gatsby'
-// import Img from 'gatsby-image'
 import detail from "../images/detail_2.png"
+import icon1 from '../images/icono-1.png'
+import icon2 from '../images/icono-2.png'
+import icon3 from '../images/icono-3.png'
 
 
 const about = () => {
@@ -32,16 +33,19 @@ const about = () => {
       </div>
 
       <div className="about-skills">
-        <h3>Habilidades Profesionales</h3>
-        <img
-          src={detail}
-          alt="detail"
-          className="about-detail"
-        />
-
+        <div className="about-title">
+          <h3>Habilidades Profesionales</h3>
+          <img
+            src={detail}
+            alt="detail"
+            className="about-detail"
+          />
+        </div>
         <div className="about-list">
           <div className="about-item 1">
             <div className="about-item-img">
+              <img src={icon1} alt="uno" />
+
             </div>
             <div className="about-item-text">
               <h4>INVESTIGACIÓN Y ESTRATEGÍA UX</h4>
@@ -54,7 +58,7 @@ const about = () => {
 
           <div className="about-item 2">
             <div className="about-item-img">
-              {/* <Img fixed={data.aboutIcon2.childImageSharp.fixed} alt="dos" /> */}
+              <img src={icon2} alt="dos" />
             </div>
             <div className="about-item-text">
               <h4>HERRAMIENTAS DIGITALES</h4>
@@ -67,7 +71,7 @@ const about = () => {
 
           <div className="about-item 3">
             <div className="about-item-img">
-              {/* <Img fixed={data.aboutIcon3.childImageSharp.fixed} alt="tres" /> */}
+              <img src={icon3} alt="tres" />
             </div>
             <div className="about-item-text">
               <h4>DESIGN THINKING</h4>
@@ -76,7 +80,6 @@ const about = () => {
             </h5>
             </div>
           </div>
-
         </div>
       </div>
     </section>

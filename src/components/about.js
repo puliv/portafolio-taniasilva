@@ -7,7 +7,7 @@ import icon3 from '../images/icono-3.png'
 
 const about = () => {
   return (
-    <section className="about" id="about">
+    <section className="about">
       <div className="about-text">
         <div className="about-left">
           <div className="about-img">
@@ -42,21 +42,25 @@ const about = () => {
           />
         </div>
         <div className="about-list">
-          <div className="about-item 1">
+          <div className="about-item">
             <div className="about-item-img">
               <img src={icon1} alt="uno" />
-
             </div>
+
             <div className="about-item-text">
               <h4>INVESTIGACIÓN Y ESTRATEGÍA UX</h4>
               <h5>
-                Agregando valor al proceso de gestión, con la capacidad de construir soluciones basadass en
+                Agregando valor al proceso de gestión, con la capacidad de construir soluciones basadas en
                 una búsqueda profunda de la experiencia del usuario.
             </h5>
             </div>
           </div>
 
-          <div className="about-item 2">
+          <div className="line">
+            <hr />
+          </div>
+
+          <div className="about-item">
             <div className="about-item-img">
               <img src={icon2} alt="dos" />
             </div>
@@ -69,7 +73,11 @@ const about = () => {
             </div>
           </div>
 
-          <div className="about-item 3">
+          <div className="line">
+            <hr />
+          </div>
+
+          <div className="about-item">
             <div className="about-item-img">
               <img src={icon3} alt="tres" />
             </div>

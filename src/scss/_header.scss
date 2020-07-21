@@ -11,11 +11,12 @@ header.nav {
     width: 55%;
     margin: 0;
     h1 {
-      margin: 0;
+      margin: 0 0 5px;
       padding-left: 10px;
       color: $color3;
       font-family: "Concert One";
       font-size: 3rem;
+      cursor: pointer;
     }
   }
   .nav-right {
@@ -32,6 +33,7 @@ header.nav {
         color: $color3;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
+        cursor: pointer;
       }
       li:hover,
       li:active {

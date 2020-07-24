@@ -67,7 +67,7 @@ const about = () => {
             <div className="about-item-text">
               <h4>HERRAMIENTAS DIGITALES</h4>
               <h5>
-                Conocomientos de herramienta Digitales Adobe AI, PH, IN y XD; Aemas de programas de
+                Conocimientos de herramientas Digitales Adobe AI, PH, IN y XD; Aemas de programas de
                 diseño 3D y planos como Autocad, 3dsMax, Artlantis y Vectorworks
             </h5>
             </div>
@@ -84,7 +84,7 @@ const about = () => {
             <div className="about-item-text">
               <h4>DESIGN THINKING</h4>
               <h5>
-                Conocimiento de esta herramienta generadora de innovación, la que permite saber dominar los desafíos de manera sistemática, colaborativa y eficiente; dando como resultado el poder encontrar ideas y soluciones para distinta áreas.
+                Conocimiento de esta herramienta generadora de innovación, la que permite dominar los desafíos de manera sistemática, colaborativa y eficiente; dando como resultado el poder encontrar ideas y soluciones para distintas áreas.
             </h5>
             </div>
           </div>

@@ -36,7 +36,7 @@ header.nav {
         cursor: pointer;
       }
       li:hover,
-      li:active {
+      li:target {
         color: $color2;
       }
     }

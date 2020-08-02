@@ -1,0 +1,33 @@
+.sumate-verde {
+  padding: 50px 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    .uno {
+      width: 100%;
+      display: flex;
+      span {
+        padding: 25px 0;
+        width: 50%;
+        text-align: justify;
+        font-size: 20px;
+      }
+    }
+    .line {
+      hr {
+        width: 100%;
+        height: 1px;
+        background-color: $color2;
+      }
+    }
+    .dos {
+      h3 {
+        color: $color2;
+        font-weight: 300;
+      }
+    }
+  }
+}

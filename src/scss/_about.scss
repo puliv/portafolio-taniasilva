@@ -18,27 +18,33 @@
     display: flex;
     margin: 0;
     padding: 0;
-
-    .about-left,
-    .about-right {
-      height: 620px;
-    }
-
     .about-left {
       width: 50%;
+      height: 700px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: $color2;
       .about-img {
         width: 450px;
-        height: 520px;
+        height: 500px;
         background-color: $color1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          border: solid 20px $color1;
+          object-fit: contain;
+          width: 100%;
+          height: auto;
+          margin: 0;
+        }
       }
     }
 
     .about-right {
       width: 50%;
+      height: 700px;
       background-color: $color1;
       @include centrado();
       h3 {

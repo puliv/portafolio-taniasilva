@@ -67,7 +67,7 @@ const about = () => {
             <div className="about-item-text">
               <h4>HERRAMIENTAS DIGITALES</h4>
               <h5>
-                Conocimientos de herramientas Digitales Adobe AI, PH, IN y XD; Aemas de programas de
+                Conocimientos de herramientas Digitales Adobe AI, PH, IN y XD; Además de programas de
                 diseño 3D y planos como Autocad, 3dsMax, Artlantis y Vectorworks
             </h5>
             </div>

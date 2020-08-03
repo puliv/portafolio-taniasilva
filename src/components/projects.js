@@ -44,13 +44,13 @@ export class Projects extends Component {
             <div className="one">
               <ul>
                 <li>
-                  <div onClick={this.handleClick}>
+                  <div>
                     <img src={project1} alt="img" />
                   </div>
                   <h5>App Súmate a lo verde</h5>
                 </li>
                 <li>
-                  <div onClick={this.handleClick}>
+                  <div>
                     <img src={project2} alt="img" />
                   </div>
                   <h5>Proyecto Titulo</h5>
@@ -60,19 +60,19 @@ export class Projects extends Component {
             <div className="two">
               <ul>
                 <li>
-                  <div onClick={this.handleClick}>
+                  <div>
                     <img src={project3} alt="img" />
                   </div>
                   <h5>Cafeteria BHP</h5>
                 </li>
                 <li>
-                  <div onClick={this.handleClick}>
+                  <div>
                     <img src={project4} alt="img" />
                   </div>
                   <h5>3D Copec</h5>
                 </li>
                 <li>
-                  <div onClick={this.handleClick}>
+                  <div>
                     <img src={project5} alt="img" />
                   </div>
                   <h5>Proyecto Patrem</h5>

@@ -1,12 +1,11 @@
 import React from "react"
 
 import ProjectsLayout from "../components/projects/projectsLayout"
-import CafeteriaBHP from "../components/projects/cafeteriaBHP"
-import SumateALoVerde from "../components/projects/sumateALoVerde"
-import Patrem from "../components/projects/patrem"
-import ProyectoTitulo from "../components/projects/proyectoTitulo"
-import Copec3d from "../components/projects/copec3d"
-import ProjectsHeader from "../components/projects/projectsHeader"
+import CafeteriaBHP from "./cafeteriaBHP"
+import SumateALoVerde from "./sumateALoVerde"
+import Patrem from "./patrem"
+import ProyectoTitulo from "./proyectoTitulo"
+import Copec3d from "./copec3d"
 
 const ProjectsIndex = () => (
   <ProjectsLayout>

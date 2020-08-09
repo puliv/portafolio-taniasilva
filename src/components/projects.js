@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { ScrollTo } from "react-scroll-to";
 
 import detail from "../images/detail_2.png"
 import project1 from '../images/project1.png'
@@ -7,7 +6,7 @@ import project2 from "../images/Brika.png"
 import project3 from '../images/BHP_V2_04.jpg'
 import project4 from '../images/COPEC_01.jpg'
 import project5 from '../images/project5.png'
-import ProjectsIndex from '../pages/projectsIndex'
+import { Link } from 'gatsby';
 
 
 export class Projects extends Component {
@@ -28,8 +27,6 @@ export class Projects extends Component {
   render() {
     const { projects } = this.state
     return (
-      // <ScrollTo>
-      //   {({ scroll }) => (
       <React.Fragment>
         <section className="projects">
           <div className="project-title">
@@ -44,10 +41,12 @@ export class Projects extends Component {
             <div className="one">
               <ul>
                 <li>
-                  <div>
-                    <img src={project1} alt="img" />
-                  </div>
-                  <h5>App Súmate a lo verde</h5>
+                  <Link to="/sumateALoVerde">
+                    <div>
+                      <img src={project1} alt="img" />
+                    </div>
+                    <h5>App Súmate a lo verde</h5>
+                  </Link>
                 </li>
                 <li>
                   <div>
@@ -81,13 +80,7 @@ export class Projects extends Component {
             </div>
           </div>
         </section>
-
-        {projects && <section>
-          <ProjectsIndex />
-        </section>}
       </React.Fragment >
-      //   )}
-      // </ScrollTo>
     )
   }
 }

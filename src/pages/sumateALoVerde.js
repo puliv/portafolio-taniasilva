@@ -1,18 +1,18 @@
 import React from "react"
-import ProjectsTitle from "./projectsTitle"
-import sumate from '../../images/sumate.png'
-import foto1 from "../../images/verde4.jpg"
-import foto2 from "../../images/verde1.jpg"
-import foto3 from "../../images/verde3.jpg"
-import foto4 from "../../images/verde7.png"
-import foto5 from "../../images/verde8.png"
-import foto6 from "../../images/verde9.jpg"
-import foto7 from "../../images/verde10.jpg"
-import foto8 from "../../images/verde11.jpg"
-import user1 from "../../images/verde_user1.png"
-import user2 from "../../images/verde_user2.png"
-import user3 from "../../images/verde_user3.png"
-import img1 from "../../images/verde_pantalla5.png"
+import ProjectsTitle from "../components/projects/projectsTitle"
+import sumate from '../images/sumate.png'
+import foto1 from "../images/verde4.jpg"
+import foto2 from "../images/verde1.jpg"
+import foto3 from "../images/verde3.jpg"
+import foto4 from "../images/verde7.png"
+import foto5 from "../images/verde8.png"
+import foto6 from "../images/verde9.jpg"
+import foto7 from "../images/verde10.jpg"
+import foto8 from "../images/verde11.jpg"
+import user1 from "../images/verde_user1.png"
+import user2 from "../images/verde_user2.png"
+import user3 from "../images/verde_user3.png"
+import img1 from "../images/verde_pantalla5.png"
 
 
 
@@ -33,7 +33,7 @@ const SumateALoVerde = () => (
       </div>
       <div className="dos">
         <div className="a">
-          <img src={foto1} alt="image" />
+          <img src={foto1} alt="Sumate a lo verde" />
           <hr />
           <span>Análisis: Aterrizaje del problema.</span>
         </div>
@@ -41,7 +41,7 @@ const SumateALoVerde = () => (
           <span className="b-span">
             En esta primera etapa UX, se presentó la metodología base para generar la experiencia del usuario, la Empatía. Con esto se generó cercanía y entendimiento de quién es nuestro usuario y qué necesita.
           </span>
-          <img src={foto2} alt="image" />
+          <img src={foto2} alt="Sumate a lo verde" />
           <hr />
           <span>Mapa de empatía.</span>
         </div>
@@ -56,9 +56,9 @@ const SumateALoVerde = () => (
           La segunda etapa se enfocó en la investigación del usuario objetivo, para así fundamentar las bases del proyecto, confirmando al usuario y diseñando el producto que necesita. Se comenzó el User research, creando entrevistas que entreguen datos cuantitativos y cualitativos, de los patrones de comportamientos del usuario, lo que ayudó a definir los arquetipos (metodología Humulu).
         </span>
         <div>
-          <img src={user1} alt="image" />
-          <img src={user2} alt="image" />
-          <img src={user3} alt="image" />
+          <img src={user1} alt="Sumate a lo verde" />
+          <img src={user2} alt="Sumate a lo verde" />
+          <img src={user3} alt="Sumate a lo verde" />
         </div>
         <div className="line-b">
           <hr />
@@ -67,7 +67,7 @@ const SumateALoVerde = () => (
       </div>
       <div className="cuatro">
         <div className="a">
-          <img src={img1} alt="image" />
+          <img src={img1} alt="Sumate a lo verde" />
           <hr />
           <span>Customer Journey Map.</span>
         </div>
@@ -80,18 +80,18 @@ const SumateALoVerde = () => (
       </div>
       <div className="cinco">
         <div className="a">
-          <img src={foto3} alt="image" />
+          <img src={foto3} alt="Sumate a lo verde" />
           <hr />
           <span>Card Sorting presencial.</span>
         </div>
         <div className="b">
-          <img src={foto4} alt="image" />
+          <img src={foto4} alt="Sumate a lo verde" />
           <hr />
           <span>Card Sorting.</span>
         </div>
       </div>
       <div className="seis">
-        <img src={foto5} alt="image" />
+        <img src={foto5} alt="Sumate a lo verde" />
       </div>
       <div className="line">
         <hr />
@@ -102,18 +102,18 @@ const SumateALoVerde = () => (
           Durante la tercera etapa, comenzamos a visualizar el producto digital, desde sus colores, texturas, flujos y esquemas, todo aludiendo a la naturaleza y las personas como agentes de cambio. Se utilizó herramientas como el moodboard, sketching y diseño de wireframes.
         </span>
         <div className="siete-images">
-          <img src={foto6} alt="image" />
-          <img src={foto7} alt="image" />
-          <img src={foto8} alt="image" />
+          <img src={foto6} alt="Sumate a lo verde" />
+          <img src={foto7} alt="Sumate a lo verde" />
+          <img src={foto8} alt="Sumate a lo verde" />
         </div>
         <div className="bottoms">
           <div>
             <hr />
-            <span>Card Sorting presencial.</span>
+            <span>Sketching y diseño de wireframes.</span>
           </div>
           <div>
             <hr />
-            <span>Card Sorting presencial.</span>
+            <span>Moodboard.</span>
           </div>
         </div>
       </div>

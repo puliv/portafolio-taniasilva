@@ -192,13 +192,29 @@
       span {
         font-family: Arial, Helvetica, sans-serif;
       }
+      margin-bottom: 70px;
       .siete-images {
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
-        img {
-          object-fit: cover;
-          width: 350px;
+        div {
+          img {
+            object-fit: cover;
+            width: 350px;
+            height: 100%;
+            max-height: 460px;
+          }
+          hr {
+            width: 50%;
+            height: 1px;
+            background-color: $color2;
+          }
+          h3 {
+            color: $color5;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
         }
       }
       .bottoms {
@@ -216,6 +232,122 @@
             font-weight: 300;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+    }
+    .ocho {
+      width: 100%;
+      span {
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        margin-top: 20px;
+        display: flex;
+        img {
+          width: 50%;
+        }
+      }
+    }
+    .nueve {
+      .nueve-a {
+        display: flex;
+        justify-content: space-between;
+        div {
+          width: 50%;
+          text-align: justify;
+          padding-right: 30px;
+          span {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+        div {
+          img {
+            max-width: 450px;
+          }
+        }
+      }
+      .nueve-b {
+        display: flex;
+        justify-content: space-between;
+        div {
+          width: 50%;
+          img {
+            object-fit: contain;
+            padding: 30px;
+            max-width: 500px;
+          }
+          hr {
+            width: 40%;
+            height: 1px;
+            background-color: $color2;
+          }
+          h3 {
+            color: $color5;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+
+      .nueve-c {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        div {
+          width: 50%;
+          img {
+            object-fit: contain;
+            padding: 30px;
+            max-width: 500px;
+            height: 350px;
+          }
+          hr {
+            width: 40%;
+            height: 1px;
+            background-color: $color2;
+          }
+          h3 {
+            color: $color5;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+    }
+    .diez {
+      // display: flex;
+      .diez-a {
+        width: 100%;
+        display: flex;
+        div.diez-img {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          img {
+            object-fit: contain;
+            max-width: 160px;
+          }
+        }
+        div {
+          width: 40%;
+          text-align: justify;
+          span {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+      .diez-b {
+        display: flex;
+        width: 100%;
+        div {
+          width: 25%;
+          img {
+            object-fit: contain;
+            width: 95%;
           }
         }
       }

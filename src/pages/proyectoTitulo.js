@@ -10,12 +10,23 @@ import img7 from '../images/brika7.png'
 import img8 from '../images/brika8.png'
 import img9 from '../images/brika9.png'
 import img10 from '../images/brika10.png'
+import img11 from '../images/brika11.png'
+import img12 from '../images/brika12.jpg'
+import img13 from '../images/brika13.jpg'
+import img14 from '../images/brika14.png'
+import img15 from '../images/brika15.png'
+import img16 from '../images/brika16.png'
+import img17 from '../images/brika17.png'
+import img18 from '../images/brika18.png'
+import img19 from '../images/brika19.png'
+import img20 from '../images/brika20.jpg'
+
 import ProjectsTitle from "../components/projects/projectsTitle"
 
 
 const ProyectoTitulo = () => (
   <div className="proyecto-titulo">
-    <ProjectsTitle title={"Proyecto Titulo"} image={brika} />
+    <ProjectsTitle title={"Proyecto Título"} image={brika} />
     <div>
       <div className="uno">
         <div>
@@ -39,7 +50,6 @@ const ProyectoTitulo = () => (
           <img src={img3} alt="proyecto-titulo" />
         </div>
       </div>
-
       <div className="tres">
         <div className="tres-a">
           <span>
@@ -82,12 +92,58 @@ const ProyectoTitulo = () => (
             <img src={img10} alt="proyecto-titulo" />
           </div>
         </div>
+        <div className="cinco-b">
+          <div>
+            <img src={img11} alt="proyecto-titulo" />
+          </div>
+          <div className="cinco-img">
+            <div>
+              <img src={img12} alt="proyecto-titulo" />
+            </div>
+            <div>
+              <img src={img13} alt="proyecto-titulo" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div className="seis">
+        <div className="seis-a">
+          <div>
+            <img src={img14} alt="proyecto-titulo" />
+          </div>
+          <div className="seis-a-img">
+            <img src={img15} alt="proyecto-titulo" />
+          </div>
+        </div>
+        <div className="seis-b">
+          <div>
+            <img src={img16} alt="proyecto-titulo" />
+          </div>
+          <div>
+            <img src={img17} alt="proyecto-titulo" />
+          </div>
+        </div>
+        <div className="seis-c">
+          <div>
+            <img src={img18} alt="proyecto-titulo" />
+          </div>
+          <div className="seis-c-img">
+            <img src={img19} alt="proyecto-titulo" />
+          </div>
+        </div>
+        <div className="seis-d">
+          <div className="seis-d-img">
+            <img src={img20} alt="proyecto-titulo" />
+          </div>
+          <div className="seis-d-span">
+            <span>
+              Brika es un producto local con los tres ámbitos de innovación social, ambiental y económico; y con un gran potencial comercial, lo cual fue reconocido en un taller de emprendimiento realizado en la Facultad de Ingeniería Comercial de la Universidad Diego Portales, el cual terminó con un fondo concursable donde obtuvo el segundo lugar.
+          </span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </div >
 )
 
 export default ProyectoTitulo

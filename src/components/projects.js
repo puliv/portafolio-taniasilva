@@ -49,10 +49,12 @@ export class Projects extends Component {
                   </Link>
                 </li>
                 <li>
-                  <div>
-                    <img src={project2} alt="img" />
-                  </div>
-                  <h5>Proyecto Titulo</h5>
+                  <Link to="/proyectoTitulo">
+                    <div>
+                      <img src={project2} alt="img" />
+                    </div>
+                    <h5>Proyecto Titulo</h5>
+                  </Link>
                 </li>
               </ul>
             </div>

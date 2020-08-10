@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 export class ProjectsHeader extends Component {
   handleClick = () => {
@@ -15,11 +16,11 @@ export class ProjectsHeader extends Component {
         </div>
         <div className="nav-projects-center">
           <ul>
-            <li onClick={this.handleClick}>App Súmate a lo Verde</li>
-            <li onClick={this.handleClick}>Proyecto Título</li>
-            <li onClick={this.handleClick}>3D Copec</li>
-            <li onClick={this.handleClick}>Cafeteria BHP</li>
-            <li onClick={this.handleClick}>Proyecto Patrem</li>
+            <Link to="/sumateALoVerde"><li onClick={this.handleClick}>App Súmate a lo Verde</li></Link>
+            <Link to="/proyectoTitulo"><li onClick={this.handleClick}>Proyecto Título</li></Link>
+            <Link to="/copec3d"><li onClick={this.handleClick}>3D Copec</li></Link>
+            <Link to="/cafeteriaBHP"><li onClick={this.handleClick}>Cafeteria BHP</li></Link>
+            <Link to="/patrem"><li onClick={this.handleClick}>Proyecto Patrem</li></Link>
           </ul>
         </div>
         <div className="nav-projects-right">

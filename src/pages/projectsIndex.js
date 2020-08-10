@@ -6,15 +6,17 @@ import SumateALoVerde from "./sumateALoVerde"
 import Patrem from "./patrem"
 import ProyectoTitulo from "./proyectoTitulo"
 import Copec3d from "./copec3d"
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 const ProjectsIndex = () => (
   <ProjectsLayout>
+    <ProjectsHeader />
     <div className="projects-index">
       <SumateALoVerde />
-      {/* <CafeteriaBHP />
-    <Patrem />
-    <ProyectoTitulo />
-    <Copec3d /> */}
+      <CafeteriaBHP />
+      <Patrem />
+      <ProyectoTitulo />
+      <Copec3d />
     </div>
   </ProjectsLayout>
 )

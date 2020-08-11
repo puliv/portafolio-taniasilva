@@ -38,7 +38,6 @@ const SumateALoVerde = () => (
         <span>
           Como equipo UX se nos da a escoger un tema a desarrollar y debido al interés medio ambiental, se decidió generar una app que facilite información sobre el complicado tema de ser agentes de cambios. Es por esto que nos preguntamos ¿cuál es el contenido que se necesita para motiva a ayudar al medio ambiente? El proyecto se dividió en 4 módulo, donde todos tenían una parte teórica y luego práctica. Cada equipo trabajaba en su proyecto y luego se hacían feedback entre compañeros, generando un trabajo colaborativo
         </span>
-        {/* <img src={} alt="img"/> */}
       </div>
       {/* UX EMPHATISE */}
       <div className="line">

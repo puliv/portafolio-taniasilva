@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import detail from "../images/detail_2.png"
 import project1 from '../images/project1.png'
 import project2 from "../images/Brika.png"
-import project3 from '../images/BHP_V2_04.jpg'
+import project3 from '../images/BHP2.jpg'
 import project4 from '../images/COPEC_01.jpg'
 import project5 from '../images/project5.png'
 import { Link } from 'gatsby';
@@ -61,10 +61,12 @@ export class Projects extends Component {
             <div className="two">
               <ul>
                 <li>
-                  <div>
-                    <img src={project3} alt="img" />
-                  </div>
-                  <h5>Cafeteria BHP</h5>
+                  <Link to="/cafeteriaBHP">
+                    <div>
+                      <img src={project3} alt="img" />
+                    </div>
+                    <h5>Cafeteria BHP</h5>
+                  </Link>
                 </li>
                 <li>
                   <div>

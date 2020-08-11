@@ -57,6 +57,9 @@
         display: flex;
         div {
           width: 50%;
+          img {
+            object-fit: contain;
+          }
         }
       }
       .cuatro-img {

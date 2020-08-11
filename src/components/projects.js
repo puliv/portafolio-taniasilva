@@ -4,8 +4,8 @@ import detail from "../images/detail_2.png"
 import project1 from '../images/project1.png'
 import project2 from "../images/Brika.png"
 import project3 from '../images/BHP2.jpg'
-import project4 from '../images/COPEC_01.jpg'
-import project5 from '../images/project5.png'
+import project4 from '../images/copec1.jpg'
+import project5 from '../images/PATREM-.png'
 import { Link } from 'gatsby';
 
 
@@ -69,16 +69,20 @@ export class Projects extends Component {
                   </Link>
                 </li>
                 <li>
-                  <div>
-                    <img src={project4} alt="img" />
-                  </div>
-                  <h5>3D Copec</h5>
+                  <Link to="/copec3d">
+                    <div>
+                      <img src={project4} alt="img" />
+                    </div>
+                    <h5>3D Copec</h5>
+                  </Link>
                 </li>
                 <li>
-                  <div>
-                    <img src={project5} alt="img" />
-                  </div>
-                  <h5>Proyecto Patrem</h5>
+                  <Link to="/patrem">
+                    <div>
+                      <img src={project5} alt="img" />
+                    </div>
+                    <h5>Proyecto Patrem</h5>
+                  </Link>
                 </li>
               </ul>
             </div>

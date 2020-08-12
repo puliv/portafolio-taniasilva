@@ -6,11 +6,12 @@ import patrem1 from '../images/patrem1.png'
 import patrem2 from '../images/patrem2.png'
 import patrem3 from '../images/patrem3.png'
 import patrem4 from '../images/patrem4.png'
-
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 
 const Patrem = () => (
   <div className="patrem">
+    <ProjectsHeader />
     <ProjectsTitle title={"Proyecto Patrem"} image={patrem} />
 
     <div>

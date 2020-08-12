@@ -13,8 +13,10 @@
 .about {
   margin: 0;
   padding: 0 0 20px 0;
+  height: auto;
 
   .about-text {
+    height: 50%;
     display: flex;
     margin: 0;
     padding: 0;
@@ -26,17 +28,20 @@
       justify-content: center;
       background-color: $color2;
       .about-img {
-        width: 450px;
-        height: 500px;
-        background-color: $color1;
+        width: 100%;
+        max-width: 450px;
+        height: 600px;
+        background-color: $color2;
         display: flex;
         align-items: center;
         justify-content: center;
         img {
           border: solid 20px $color1;
-          object-fit: contain;
+          object-fit: cover;
           width: 100%;
-          height: auto;
+          max-width: 400px;
+          height: 100%;
+          max-height: 700px;
           margin: 0;
         }
       }
@@ -67,7 +72,8 @@
   }
   .about-skills {
     width: 100%;
-    height: 700px;
+    height: 50%;
+    padding: 50px;
     @include centrado();
     .about-title {
       height: 30%;
@@ -84,13 +90,12 @@
       }
     }
     .about-list {
-      width: 1100px;
+      width: 100%;
       height: 70%;
       padding: 0 20px;
       @include centrado();
       .about-item {
         width: 100%;
-        height: 100px;
         display: flex;
         .about-item-img {
           width: 20%;
@@ -124,9 +129,57 @@
         display: flex;
         justify-content: center;
         hr {
-          width: 920px;
+          width: 950px;
           height: 1px;
           background-color: $color2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about {
+    .about-text {
+      display: flex;
+      flex-direction: column-reverse;
+      .about-left {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-img {
+          width: 80%;
+          height: 500px;
+          background-color: $color2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            border: solid 20px $color1;
+            object-fit: cover;
+            width: auto;
+            height: auto;
+            margin: 0;
+          }
+        }
+      }
+      .about-right {
+        width: 100%;
+        height: 600px;
+        @include centrado();
+      }
+    }
+    .about-skills {
+      .about-list {
+        width: 100%;
+        height: 70%;
+        padding: 0 20px;
+        @include centrado();
+        .about-item {
+          width: 100%;
+          display: flex;
         }
       }
     }

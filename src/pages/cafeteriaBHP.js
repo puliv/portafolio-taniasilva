@@ -5,10 +5,12 @@ import BHP1 from '../images/BHP1.jpg'
 import BHP2 from '../images/BHP2.jpg'
 import BHP3 from '../images/BHP3.jpg'
 import G100 from '../images/G100.png'
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 
 const CafeteriaBHP = () => (
   <div className="cafeteria">
+    <ProjectsHeader />
     <ProjectsTitle title={"Cafetería BHP"} image={BHP} />
 
     <div>

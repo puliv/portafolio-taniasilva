@@ -14,7 +14,7 @@ const header = () => {
             <ul>
               <li onClick={() => scroll({ x: 0, y: 0, smooth: true })}>INICIO</li>
               <li onClick={() => scroll({ x: 0, y: 630, smooth: true })}>SOBRE MI</li>
-              <li onClick={() => scroll({ x: 0, y: 2079, smooth: true })}>PROYECTOS</li>
+              <li onClick={() => scroll({ x: 0, y: 2180, smooth: true })}>PROYECTOS</li>
               <li onClick={() => scroll({ x: 0, y: 3000, smooth: true })}>CONTÁCTAME</li>
             </ul>
           </div>

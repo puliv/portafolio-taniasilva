@@ -9,6 +9,7 @@ const Inicio = () => (
       <h1>Soy Tania Silva</h1>
     </div>
     <div className="inicio-right">
+      <h2 className="right-h2">Tania Silva</h2>
       <h3>Diseñadora </h3>
       <h3>Industrial y UX</h3>
       <div className="inicio-img">

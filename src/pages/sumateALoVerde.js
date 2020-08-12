@@ -27,11 +27,12 @@ import user1 from "../images/verde_user1.png"
 import user2 from "../images/verde_user2.png"
 import user3 from "../images/verde_user3.png"
 import img1 from "../images/verde_pantalla5.png"
-
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 
 const SumateALoVerde = () => (
   <div className="sumate-verde">
+    <ProjectsHeader />
     <ProjectsTitle title={"Sumate a lo Verde"} image={sumate} />
     <div>
       <div className="uno">

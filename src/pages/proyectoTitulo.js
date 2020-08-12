@@ -22,10 +22,11 @@ import img19 from '../images/brika19.png'
 import img20 from '../images/brika20.jpg'
 
 import ProjectsTitle from "../components/projects/projectsTitle"
-
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 const ProyectoTitulo = () => (
   <div className="proyecto-titulo">
+    <ProjectsHeader />
     <ProjectsTitle title={"Proyecto Título"} image={brika} />
     <div>
       <div className="uno">

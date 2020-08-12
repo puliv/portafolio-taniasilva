@@ -98,20 +98,5 @@ const about = () => {
   )
 }
 
-// about.propTypes = {
-//   data: PropTypes.object.isRequired
-// }
-
-// export const query = graphql`
-//   query about{
-//     aboutIcon1: file(relativePath: { eq: "icono-1.png"}) {
-//       childImageSharp {
-//         fixed(width: 100) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-// }
-// `
 
 export default about

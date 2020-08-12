@@ -4,11 +4,12 @@ import copec from '../images/copec.png'
 import copec1 from '../images/copec1.jpg'
 import copec2 from '../images/copec2.jpg'
 import G100 from '../images/G100.png'
-
+import ProjectsHeader from "../components/projects/projectsHeader"
 
 
 const Copec3d = () => (
   <div className="copec">
+    <ProjectsHeader />
     <ProjectsTitle title={"3D Copec"} image={copec} />
     <div>
       <div className="uno">

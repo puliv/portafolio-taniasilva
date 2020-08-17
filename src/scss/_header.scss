@@ -40,5 +40,52 @@ header.nav {
         color: $color2;
       }
     }
+    img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header.nav {
+    width: 100vw;
+
+    .nav-left {
+      width: 85%;
+    }
+    .nav-right {
+      width: 15%;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        display: none;
+        visibility: none;
+      }
+      img {
+        display: block;
+        visibility: visible;
+        object-fit: contain;
+        max-width: 30px;
+        cursor: pointer;
+        margin: 0;
+      }
+    }
+  }
+
+  div.nav-mobile {
+    height: 100%;
+    width: 450px;
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin-bottom: 0;
+      transition: 300ms ease-out;
+      // li {
+      // display: flex;
+      // align-items: flex-end;
+      // }
+    }
   }
 }

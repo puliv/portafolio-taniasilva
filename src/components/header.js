@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollTo } from "react-scroll-to";
-
+import lineMenu from '../images/menu.png'
 
 const header = () => {
   return (
@@ -17,6 +17,7 @@ const header = () => {
               <li onClick={() => scroll({ x: 0, y: 2180, smooth: true })}>PROYECTOS</li>
               <li onClick={() => scroll({ x: 0, y: 3000, smooth: true })}>CONTÁCTAME</li>
             </ul>
+            <img src={lineMenu} alt="menu" />
           </div>
         </header>
       )}

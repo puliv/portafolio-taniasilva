@@ -3,6 +3,7 @@ $color2: #43bec4;
 $color3: #696b6b;
 $color4: #e5e5e5;
 $color5: #1d1d1b;
+$color6: rgba(67, 190, 196, 0.55);
 
 @import "header";
 @import "inicio";
@@ -28,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   #___gatsby {
-    width: 100% !important;
+    width: 100%;
   }
 }
 

@@ -19,12 +19,16 @@ const about = () => {
           </div>
         </div>
         <div className="about-right">
-          <h3>Sobre mi</h3>
-          <img
-            src={detail}
-            alt="detail"
-            className="about-detail"
-          />
+          <div className="about-title">
+            <h3>Sobre mi</h3>
+          </div>
+          <div className="about-detail">
+            <img
+              src={detail}
+              alt="detail"
+              className="about-detail-img"
+            />
+          </div>
           <div className="about-text">
             <h4>
               Hola mi nombre es Tania, amante del diseño, titulada de la Universidad Diego Portales de la carrera Diseño Industrial y Diseñadora Ux; especialización realizada en un diplomado de la Universidad Finis Terrae. Estoy constantemente ampliando conocimientos, aprendiendo nuevas metodologías y herramientas, para lograr resultados positivos.

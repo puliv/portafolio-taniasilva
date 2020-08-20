@@ -8,11 +8,12 @@ export class ProjectsHeader extends Component {
 
   render() {
     const back = "<<"
-    const next = ">>"
     return (
       <header className="nav-projects">
         <div className="nav-projects-left">
-          {back}
+          <Link to="/" >
+            {back}
+          </Link>
         </div>
         <div className="nav-projects-center">
           <ul>
@@ -42,9 +43,6 @@ export class ProjectsHeader extends Component {
                 </li>
             </Link>
           </ul>
-        </div>
-        <div className="nav-projects-right">
-          {next}
         </div>
       </header>
     )

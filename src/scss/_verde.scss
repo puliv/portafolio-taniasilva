@@ -84,11 +84,13 @@
       span {
         font-family: Arial, Helvetica, sans-serif;
       }
-      div {
+      div.tres-img-user {
         display: flex;
+        justify-content: center;
         img {
-          object-fit: contain;
-          width: 380px;
+          object-fit: scale-down;
+          max-width: 350px;
+          width: 100%;
         }
       }
       .line-b {
@@ -189,10 +191,10 @@
       }
     }
     .siete {
+      margin-bottom: 70px;
       span {
         font-family: Arial, Helvetica, sans-serif;
       }
-      margin-bottom: 70px;
       .siete-images {
         display: flex;
         margin-top: 20px;
@@ -319,7 +321,6 @@
       }
     }
     .diez {
-      // display: flex;
       .diez-a {
         width: 100%;
         display: flex;
@@ -355,8 +356,26 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .tres {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 80%;
+      }
+    }
+    .line-b {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
 @media screen and (max-width: 920px) {
   .sumate-verde {
+    padding: 40px 80px;
     div {
       .uno {
         span {
@@ -383,20 +402,6 @@
           padding-top: 50px;
         }
       }
-      .tres {
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          img {
-            width: 80%;
-          }
-        }
-        .line-b {
-          display: flex;
-          flex-direction: column;
-        }
-      }
       .cuatro {
         display: flex;
         flex-direction: column;
@@ -418,21 +423,6 @@
         height: auto;
         .a {
           width: 100%;
-          height: 100%;
-          img {
-            max-height: 500px;
-            width: 100%;
-            object-fit: cover;
-          }
-          hr {
-            width: 45%;
-            height: 1px;
-            background-color: $color2;
-          }
-          span {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
-          }
         }
         .b {
           width: 100%;
@@ -440,15 +430,156 @@
             margin-bottom: 0;
           }
           hr {
-            width: 40%;
-            height: 1px;
-            background-color: $color2;
-            margin-left: 30px;
+            width: 45%;
+            margin-left: 0px;
           }
           span {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
-            margin-left: 30px;
+            margin-left: 0px;
+          }
+        }
+      }
+      .siete {
+        margin-bottom: 20px;
+        text-align: justify;
+        .siete-images {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 20px;
+          justify-content: center;
+          align-items: center;
+          div {
+            margin-bottom: 20px;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              max-height: none;
+            }
+          }
+        }
+      }
+      .nueve {
+        .nueve-a {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          div {
+            width: 100%;
+            padding-right: 0px;
+          }
+          div {
+            img {
+              max-width: none;
+              width: 100%;
+            }
+          }
+        }
+        .nueve-b {
+          display: flex;
+          justify-content: center;
+          flex-direction: column-reverse;
+          align-items: center;
+          div {
+            width: 100%;
+            img {
+              padding: 0px;
+              max-width: none;
+              width: 100%;
+            }
+          }
+        }
+
+        .nueve-c {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 30px;
+          div {
+            width: 100%;
+            img {
+              object-fit: contain;
+              padding: 0px;
+              max-width: none;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+      .diez {
+        .diez-a {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          div.diez-img {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div {
+              justify-content: space-between;
+              img {
+                object-fit: contain;
+                max-width: 210px;
+              }
+            }
+          }
+          div.diez-span {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+        }
+        .diez-b {
+          display: flex;
+          width: 100%;
+          div {
+            width: 25%;
+            img {
+              object-fit: contain;
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sumate-verde {
+    padding: 40px 75px;
+    .diez {
+      .diez-a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        div.diez-img {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          div {
+            justify-content: space-between;
+            img {
+              object-fit: contain;
+              max-width: none;
+              width: 98%;
+            }
+          }
+        }
+        div.diez-span {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+      .diez-b {
+        display: flex;
+        width: 100%;
+        div {
+          width: 25%;
+          img {
+            object-fit: contain;
+            width: 95%;
           }
         }
       }

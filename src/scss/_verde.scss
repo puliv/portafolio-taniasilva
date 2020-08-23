@@ -5,6 +5,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include media(md) {
+    padding: 40px 80px;
+  }
+  @include media(sm-b) {
+    padding: 40px 70px;
+  }
+  @include media(sm) {
+    padding: 40px 50px;
+  }
   div {
     .uno {
       width: 100%;
@@ -375,7 +384,6 @@
 
 @media screen and (max-width: 920px) {
   .sumate-verde {
-    padding: 40px 80px;
     div {
       .uno {
         span {

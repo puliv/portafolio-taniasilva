@@ -61,7 +61,6 @@ const CafeteriaBHP = () => (
           </div>
           <div >
             <h3>Realización técnica</h3>
-
             <span >
               Se utilizó Vectorworks para el levantamiento 3d del espacio y Artlantis para generar las propuestas de materialidad y colores.
             </span>

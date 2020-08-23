@@ -5,6 +5,41 @@ $color4: #e5e5e5;
 $color5: #1d1d1b;
 $color6: rgba(67, 190, 196, 0.55);
 
+$breakpoint-sm: 520px;
+$breakpoint-sm-a: 700px;
+$breakpoint-sm-b: 850px;
+$breakpoint-md: 920px;
+$breakpoint-md-b: 1000px;
+$breakpoint-lg: 1200px;
+
+@mixin media($media) {
+  @if $media == sm {
+    @media screen and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $media == sm-a {
+    @media screen and (max-width: $breakpoint-sm-a) {
+      @content;
+    }
+  } @else if $media == sm-b {
+    @media screen and (max-width: $breakpoint-sm-b) {
+      @content;
+    }
+  } @else if $media == md {
+    @media screen and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == md-b {
+    @media screen and (max-width: $breakpoint-md-b) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media screen and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}
+
 @import "header";
 @import "inicio";
 @import "about";

@@ -69,7 +69,7 @@ const SumateALoVerde = () => (
         <span>
           La segunda etapa se enfocó en la investigación del usuario objetivo, para así fundamentar las bases del proyecto, confirmando al usuario y diseñando el producto que necesita. Se comenzó el User research, creando entrevistas que entreguen datos cuantitativos y cualitativos, de los patrones de comportamientos del usuario, lo que ayudó a definir los arquetipos (metodología Humulu).
         </span>
-        <div>
+        <div className="tres-img-user">
           <img src={user1} alt="Sumate a lo verde" />
           <img src={user2} alt="Sumate a lo verde" />
           <img src={user3} alt="Sumate a lo verde" />
@@ -199,7 +199,7 @@ const SumateALoVerde = () => (
               <img src={foto18} alt="verde" />
             </div>
           </div>
-          <div>
+          <div className="diez-span">
             <span>
               El desarrollo de este proyecto fue un gran desafío, por el alto nivel de información sintetizada en una aplicación y los diferentes tipos de usuarios que abordar, desde niños, jóvenes hasta adultos, ya que todos estamos en diferentes niveles de formación y cambiar hábitos es una acción difícil de generar, por la necesidad de conseguir las cosas de manera rápida y fácil. El prototipo final presentado alcanza un buen nivel de testeo, sin embargo, podrían realizarse mejoras si se continuara en el proyecto.
 

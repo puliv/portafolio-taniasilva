@@ -4,15 +4,16 @@ header.nav-projects {
   width: 100%;
   cursor: pointer;
   display: flex;
-  justify-content: space-around;
-  .nav-projects-right,
+  justify-content: space-between;
   .nav-projects-left {
     color: $color3;
     width: 5%;
     display: flex;
-  }
-  .nav-projects-left {
     justify-content: flex-end;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
   .nav-projects-center {
     display: flex;
@@ -34,6 +35,38 @@ header.nav-projects {
         li:target {
           color: $color2;
           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header.nav-projects {
+    margin-bottom: 15px;
+    .nav-projects-left {
+      width: 5%;
+    }
+    .nav-projects-center {
+      display: flex;
+      width: 90%;
+      ul {
+        width: 100%;
+        justify-content: space-between;
+        a {
+          width: 20%;
+          text-decoration: unset;
+          li {
+            text-align: center;
+            color: $color3;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          li:hover,
+          li:target {
+            color: $color2;
+            font-weight: bold;
+          }
         }
       }
     }

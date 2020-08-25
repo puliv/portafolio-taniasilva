@@ -31,8 +31,7 @@ function Header() {
               </div>
             </div>
           </header>
-          {navMobile && <div className="nav-mobile">
-
+          {navMobile && <div className="nav-mobile slide-in-right">
             <ul>
               <li onClick={() => scroll({ x: 0, y: 0, smooth: true })}>INICIO</li>
               <li>SOBRE MI</li>

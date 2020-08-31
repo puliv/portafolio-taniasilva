@@ -3,6 +3,8 @@ import detail from "../images/detail_2.png"
 import icon1 from '../images/icono-1.png'
 import icon2 from '../images/icono-2.png'
 import icon3 from '../images/icono-3.png'
+import tania from '../images/about_me.jpg'
+
 
 
 const about = () => {
@@ -12,7 +14,7 @@ const about = () => {
         <div className="about-left">
           <div className="about-img">
             <img
-              src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/about_me.jpg?raw=true"}
+              src={tania}
               alt="yo"
             />
           </div>

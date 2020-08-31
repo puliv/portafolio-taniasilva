@@ -9,13 +9,12 @@
   display: flex;
   justify-content: center;
   @include media(sm) {
-    height: auto;
     background-color: $color2;
     display: flex;
     justify-content: center;
   }
   @include media(md) {
-    height: auto;
+    height: 670px;
     background-color: $color2;
     display: flex;
     justify-content: center;
@@ -31,11 +30,11 @@
     text-align: center;
     @include media(sm) {
       width: 100%;
-      padding: 40px 0 0;
+      // padding: 70px 0 0;
     }
     @include media(md) {
       width: 500px;
-      padding: 40px 0 0;
+      padding: 70px 0 0;
     }
     h3,
     h4 {

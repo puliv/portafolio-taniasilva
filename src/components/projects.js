@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 
 import detail from "../images/detail_2.png"
-import project1 from '../images/project1.png'
-import project2 from "../images/Brika.png"
-import project3 from '../images/BHP2.jpg'
-import project4 from '../images/copec1.jpg'
-import project5 from '../images/PATREM-.png'
 import { Link } from 'gatsby';
 
 
@@ -25,7 +20,6 @@ export class Projects extends Component {
   }
 
   render() {
-    const { projects } = this.state
     return (
       <React.Fragment>
         <section className="projects">
@@ -43,7 +37,7 @@ export class Projects extends Component {
                 <li>
                   <Link to="/sumateALoVerde">
                     <div>
-                      <img src={project1} alt="img" />
+                      <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/project1.png?raw=true"} alt="img" />
                     </div>
                     <h5>App Súmate a lo verde</h5>
                   </Link>
@@ -51,7 +45,7 @@ export class Projects extends Component {
                 <li>
                   <Link to="/proyectoTitulo">
                     <div>
-                      <img src={project2} alt="img" />
+                      <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/Brika.png?raw=true"} alt="img" />
                     </div>
                     <h5>Proyecto Titulo</h5>
                   </Link>
@@ -63,7 +57,7 @@ export class Projects extends Component {
                 <li>
                   <Link to="/cafeteriaBHP">
                     <div>
-                      <img src={project3} alt="img" />
+                      <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/BHP2.jpg?raw=true"} alt="img" />
                     </div>
                     <h5>Cafeteria BHP</h5>
                   </Link>
@@ -71,7 +65,7 @@ export class Projects extends Component {
                 <li>
                   <Link to="/copec3d">
                     <div>
-                      <img src={project4} alt="img" />
+                      <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/copec1.jpg?raw=true"} alt="img" />
                     </div>
                     <h5>3D Copec</h5>
                   </Link>
@@ -79,7 +73,7 @@ export class Projects extends Component {
                 <li>
                   <Link to="/patrem">
                     <div>
-                      <img src={project5} alt="img" />
+                      <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/PATREM-.png?raw=true"} alt="img" />
                     </div>
                     <h5>Proyecto Patrem</h5>
                   </Link>

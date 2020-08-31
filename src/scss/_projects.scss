@@ -7,19 +7,30 @@
   width: 100%;
   height: 700px;
   background-color: $color1;
+  @include media(md) {
+    width: 100%;
+    height: auto !important;
+    padding: 0px 0px 50px;
+  }
   .project-title {
     height: 25%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+    @include media(md) {
+      height: 20%;
+    }
     h3 {
       color: $color2;
       @include fontStyle();
     }
-  }
-  .project-detail {
-    margin-bottom: 30px;
+    .project-detail {
+      margin-bottom: 30px;
+      @include media(sm) {
+        width: 90%;
+      }
+    }
   }
   .project-body {
     height: 75%;
@@ -27,29 +38,60 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    @include media(md) {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     div {
       width: 100%;
       max-width: 600px;
       height: 50%;
       max-height: 250px;
+      @include media(md) {
+        max-width: 500px;
+        max-height: none;
+      }
       ul {
         margin-left: 0;
         list-style: none;
         display: flex;
+        @include media(md) {
+          margin-bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         li {
           text-align: center;
           width: 180px;
           margin-right: 20px;
           cursor: pointer;
+          @include media(md) {
+            width: auto;
+            margin-right: 0px;
+            // margin-bottom: 20px;
+          }
           a {
             text-decoration: unset;
             div {
               width: 180px;
               height: 180px;
+              @include media(md) {
+                width: 220px;
+                height: 220px;
+              }
               img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
+                @include media(md) {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                }
               }
             }
           }
@@ -60,47 +102,6 @@
           }
           h5:hover {
             color: $color2;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .projects {
-    width: 100%;
-    height: auto;
-    padding: 50px 0px;
-    .project-body {
-      div {
-        width: 100%;
-        max-width: 100%;
-        height: 50%;
-        max-height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ul {
-          margin-bottom: 0;
-          display: flex;
-          flex-direction: column;
-          li {
-            width: 200px;
-            margin-right: 0px;
-            margin-bottom: 20px;
-            a {
-              text-decoration: unset;
-              div {
-                width: 220px;
-                height: 220px;
-                img {
-                  object-fit: cover;
-                  width: 100%;
-                  height: 100%;
-                }
-              }
-            }
           }
         }
       }

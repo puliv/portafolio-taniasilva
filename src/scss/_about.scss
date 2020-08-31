@@ -15,26 +15,47 @@
   padding: 0 0 20px 0;
   height: auto;
 
-  .about-text {
+  .about-me {
     height: 50%;
     display: flex;
     margin: 0;
     padding: 0;
+    @include media(md) {
+      flex-direction: column-reverse;
+    }
     .about-left {
       width: 50%;
-      min-height: 700px;
+      height: 700px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: $color2;
+      @include media(md) {
+        width: 100%;
+        height: 700px;
+        align-items: center;
+        min-height: none;
+      }
+      @include media(sm) {
+        height: 600px;
+      }
+      @include media(xs) {
+        height: 550px;
+      }
+      @include media(xxs) {
+        height: 500px;
+      }
       .about-img {
         width: 100%;
-        max-width: 450px;
-        height: 600px;
+        height: 85%;
         background-color: $color2;
         display: flex;
         align-items: center;
         justify-content: center;
+        @include media(md) {
+          width: 80%;
+          background-color: $color2;
+        }
         img {
           border: solid 20px $color1;
           object-fit: cover;
@@ -43,6 +64,17 @@
           height: 100%;
           max-height: 700px;
           margin: 0;
+          @include media(md) {
+            width: auto;
+            height: auto;
+          }
+          @include media(sm) {
+            max-width: 100%;
+            border: solid 15px $color1;
+          }
+          @include media(xxs) {
+            max-width: 300px;
+          }
         }
       }
     }
@@ -52,12 +84,19 @@
       min-height: 700px;
       background-color: $color1;
       @include centrado();
+      @include media(md) {
+        width: 100%;
+        height: 600px;
+      }
       .about-title {
         width: 100%;
         height: 25%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        @include media(md) {
+          height: 20%;
+        }
         h3 {
           color: $color2;
           @include fontStyle();
@@ -85,6 +124,15 @@
         h4 {
           color: $color5;
           @include fontStyle();
+          @include media(sm) {
+            width: 330px;
+          }
+          @include media(xs) {
+            width: 300px;
+          }
+          @include media(xxs) {
+            width: 250px;
+          }
         }
       }
     }
@@ -92,7 +140,7 @@
   .about-skills {
     width: 100%;
     height: 50%;
-    padding: 80px 50px 70px;
+    padding: 80px 50px 0px;
     @include centrado();
     .about-title {
       height: 30%;
@@ -103,6 +151,9 @@
       h3 {
         color: $color2;
         @include fontStyle();
+        @include media(xs) {
+          text-align: center;
+        }
       }
       .about-detail {
         margin-bottom: 30px;
@@ -113,6 +164,9 @@
       height: 70%;
       padding: 0 20px;
       @include centrado();
+      @include media(xs) {
+        padding: 0;
+      }
       .about-item {
         width: 100%;
         display: flex;
@@ -120,6 +174,9 @@
           width: 20%;
           display: flex;
           justify-content: flex-end;
+          @include media(md) {
+            align-items: flex-start;
+          }
           img {
             object-fit: scale-down;
             margin: 0 20px 15px 0;
@@ -133,12 +190,17 @@
             width: 100%;
             margin: 0px;
             font-size: 18px;
-            @include fontStyle();
             color: $color5;
+            @include fontStyle();
           }
           h4 {
             margin-bottom: 15px;
             color: $color2;
+          }
+          h5 {
+            @include media(sm) {
+              text-align: justify;
+            }
           }
         }
       }
@@ -151,54 +213,6 @@
           width: 950px;
           height: 1px;
           background-color: $color2;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .about {
-    .about-text {
-      display: flex;
-      flex-direction: column-reverse;
-      .about-left {
-        width: 100%;
-        height: 700px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .about-img {
-          width: 80%;
-          height: 500px;
-          background-color: $color2;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            border: solid 20px $color1;
-            object-fit: cover;
-            width: auto;
-            height: auto;
-            margin: 0;
-          }
-        }
-      }
-      .about-right {
-        width: 100%;
-        height: 600px;
-        @include centrado();
-      }
-    }
-    .about-skills {
-      .about-list {
-        width: 100%;
-        height: 70%;
-        padding: 0 20px;
-        @include centrado();
-        .about-item {
-          width: 100%;
-          display: flex;
         }
       }
     }

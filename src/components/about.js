@@ -1,6 +1,5 @@
 import React from "react"
 import detail from "../images/detail_2.png"
-import sobremi from "../images/about_me.jpg"
 import icon1 from '../images/icono-1.png'
 import icon2 from '../images/icono-2.png'
 import icon3 from '../images/icono-3.png'
@@ -9,11 +8,11 @@ import icon3 from '../images/icono-3.png'
 const about = () => {
   return (
     <section className="about">
-      <div className="about-text">
+      <div className="about-me">
         <div className="about-left">
           <div className="about-img">
             <img
-              src={sobremi}
+              src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/about_me.jpg?raw=true"}
               alt="yo"
             />
           </div>

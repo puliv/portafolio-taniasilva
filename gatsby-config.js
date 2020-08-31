@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Tania Silva`,
-        short_name: `TS`,
+        short_name: ``,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "../components/image"
 import detail from "../images/detail_1.png"
 
 const Inicio = () => (
@@ -13,7 +12,7 @@ const Inicio = () => (
       <h3>Diseñadora </h3>
       <h3>Industrial y UX/UI</h3>
       <div className="inicio-img">
-        <Image />
+        <img src={"https://github.com/TaniaSilvaTala/portafolio/blob/source/src/images/flores.jpg?raw=true"} alt="inicio" />
       </div>
       <img
         src={detail}

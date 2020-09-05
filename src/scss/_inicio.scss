@@ -2,27 +2,21 @@
   display: flex;
   margin: 0;
   padding: 0;
-  .inicio-left,
-  .inicio-right {
-    height: 750px;
-    @include media(md) {
-      height: 700px;
-    }
-    @include media(sm) {
-      height: 550px;
-    }
-  }
-
   .inicio-left {
     width: 50%;
+    height: 750px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: $color6;
     padding: 0 30px 30px;
     @include media(md) {
+      height: 700px;
       display: none;
       visibility: hidden;
+    }
+    @include media(sm) {
+      height: 600px;
     }
     h1 {
       color: $color1;
@@ -34,6 +28,7 @@
 
   .inicio-right {
     width: 50%;
+    height: 750px;
     background-color: $color2;
     display: flex;
     align-items: center;
@@ -41,10 +36,8 @@
     justify-content: center;
     @include media(md) {
       width: 100%;
+      height: 700px;
       padding-top: 0px;
-    }
-    @include media(xs) {
-      padding-top: 50px;
     }
     h1.right-h2 {
       text-align: center;

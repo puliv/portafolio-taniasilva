@@ -1,12 +1,10 @@
 import React from "react"
 import detail from "../images/detail_2.png"
 import icon1 from '../images/icono-1.png'
-import icon2 from '../images/icono-2.png'
+import icon2 from '../images/icono-4.png'
 import icon3 from '../images/icono-3.png'
+import icon4 from '../images/icono-2.png'
 import tania from '../images/about_me.jpg'
-
-
-
 const about = () => {
   return (
     <section className="about">
@@ -32,7 +30,7 @@ const about = () => {
           </div>
           <div className="about-text">
             <h4>
-              Hola mi nombre es Tania, amante del diseño, titulada de la Universidad Diego Portales de la carrera Diseño Industrial y Diseñadora Ux; especialización realizada en un diplomado de la Universidad Finis Terrae. Estoy constantemente ampliando conocimientos, aprendiendo nuevas metodologías y herramientas, para lograr resultados positivos.
+              Hola mi nombre es Tania, amante del diseño, titulada de la Universidad Diego Portales de la carrera Diseño Industrial y Diseñadora UX/UI; especialización realizada en un diplomado de la Universidad Finis Terrae. Estoy constantemente ampliando conocimientos, aprendiendo nuevas metodologías y herramientas, para lograr resultados positivos.
             </h4>
             <h4>
               Soy una persona flexible, rigurosa y con una gran capacidad de toma efectiva de decisiones, con aptitud de liderazgo y trabajo en equipo de manera colaborativa. Creativa, observadora y comprometida, preocupada siempre de cumplir en tiempo y forma sus objetivos.
@@ -40,7 +38,6 @@ const about = () => {
           </div>
         </div>
       </div>
-
       <div className="about-skills">
         <div className="about-title">
           <h3>Habilidades Profesionales</h3>
@@ -55,7 +52,6 @@ const about = () => {
             <div className="about-item-img">
               <img src={icon1} alt="uno" />
             </div>
-
             <div className="about-item-text">
               <h4>INVESTIGACIÓN Y ESTRATEGÍA UX</h4>
               <h5>
@@ -64,31 +60,41 @@ const about = () => {
             </h5>
             </div>
           </div>
-
           <div className="line">
             <hr />
           </div>
-
           <div className="about-item">
             <div className="about-item-img">
-              <img src={icon2} alt="dos" />
+              <img src={icon2} alt="uno" />
+            </div>
+            <div className="about-item-text">
+              <h4>GRÁFICA Y DISEÑO DE INTERFACES UI</h4>
+              <h5>
+                Capacidad y conocimiento en diseño gráfico para crear soluciones visualmnete armoniosas como propustas integrales en experiencia y aspecto, siendo capaz de realizar wireframes y convertirlos en prototipos de alta calidad.
+            </h5>
+            </div>
+          </div>
+          <div className="line">
+            <hr />
+          </div>
+          <div className="about-item">
+            <div className="about-item-img">
+              <img src={icon3} alt="dos" />
             </div>
             <div className="about-item-text">
               <h4>HERRAMIENTAS DIGITALES</h4>
               <h5>
-                Conocimientos de herramientas Digitales Adobe AI, PH, IN y XD; Además de programas de
+                Conocimientos de herramientas digitales como Figma, Adobe AI, PH, IN y XD; Además de programas de
                 diseño 3D y planos como Autocad, 3dsMax, Artlantis y Vectorworks
             </h5>
             </div>
           </div>
-
           <div className="line">
             <hr />
           </div>
-
           <div className="about-item">
             <div className="about-item-img">
-              <img src={icon3} alt="tres" />
+              <img src={icon4} alt="tres" />
             </div>
             <div className="about-item-text">
               <h4>DESIGN THINKING</h4>
@@ -99,9 +105,7 @@ const about = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
-
-
 export default about

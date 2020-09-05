@@ -1,50 +1,89 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
+import lineMenu from '../../images/menu.png'
+
 
 export class ProjectsHeader extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      openProjectsMenu: false
+    }
+  }
+
   handleClick = () => {
-    console.log("hola")
+    const { openProjectsMenu } = this.state
+    this.setState({
+      openProjectsMenu: !openProjectsMenu
+    })
   }
 
   render() {
+    const { openProjectsMenu } = this.state
     const back = "<<"
     return (
-      <header className="nav-projects">
-        <div className="nav-projects-left">
-          <Link to="/" >
-            {back}
-          </Link>
-        </div>
-        <div className="nav-projects-center">
+      <React.Fragment>
+        <header className="nav-projects">
+          <div className="nav-projects-left">
+            <Link to="/" >
+              {back}
+            </Link>
+          </div>
+          <div className="nav-projects-center">
+            <ul>
+              <Link to="/sumateALoVerde">
+                <li>
+                  App Súmate a lo Verde
+                </li>
+              </Link>
+              <Link to="/proyectoTitulo">
+                <li>
+                  Proyecto Título
+                </li>
+              </Link>
+              <Link to="/copec3d">
+                <li>
+                  3D Copec
+                </li>
+              </Link>
+              <Link to="/cafeteriaBHP">
+                <li>
+                  Cafeteria BHP
+                </li>
+              </Link>
+              <Link to="/patrem">
+                <li>
+                  Proyecto Patrem
+                </li>
+              </Link>
+            </ul>
+            <div onClick={this.handleClick} className="mobile-projects-nav">
+              <img src={lineMenu} alt="menu" />
+            </div>
+          </div>
+        </header>
+
+        {openProjectsMenu && <div className="nav-mobile slide-in-right">
           <ul>
             <Link to="/sumateALoVerde">
-              <li onClick={this.handleClick}>
-                App Súmate a lo Verde
-                </li>
+              <li>App Súmate a lo Verde</li>
             </Link>
             <Link to="/proyectoTitulo">
-              <li onClick={this.handleClick}>
-                Proyecto Título
-                </li>
+              <li>Proyecto Título</li>
             </Link>
             <Link to="/copec3d">
-              <li onClick={this.handleClick}>
-                3D Copec
-                </li>
+              <li>3D Copec</li>
             </Link>
             <Link to="/cafeteriaBHP">
-              <li onClick={this.handleClick}>
-                Cafeteria BHP
-                </li>
+              <li>Cafeteria BHP</li>
             </Link>
             <Link to="/patrem">
-              <li onClick={this.handleClick}>
-                Proyecto Patrem
-                </li>
+              <li>Proyecto Patrem</li>
             </Link>
           </ul>
-        </div>
-      </header>
+        </div>}
+      </React.Fragment>
     )
   }
 }

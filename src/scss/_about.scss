@@ -170,6 +170,11 @@
       .about-item {
         width: 100%;
         display: flex;
+        @include media(sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         .about-item-img {
           width: 20%;
           display: flex;
@@ -177,14 +182,26 @@
           @include media(md) {
             align-items: flex-start;
           }
+          @include media(sm) {
+            widows: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
           img {
             object-fit: scale-down;
             margin: 0 20px 15px 0;
+            @include media(sm) {
+              margin: 0 0 20px;
+            }
           }
         }
         .about-item-text {
           width: 75%;
           height: auto;
+          @include media(sm) {
+            width: 100%;
+          }
           h4,
           h5 {
             width: 100%;
@@ -196,6 +213,9 @@
           h4 {
             margin-bottom: 15px;
             color: $color2;
+            @include media(sm) {
+              text-align: center;
+            }
           }
           h5 {
             @include media(sm) {

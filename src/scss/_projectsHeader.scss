@@ -8,7 +8,7 @@ header.nav-projects {
   @include media(md-b) {
     margin-bottom: 15px;
   }
-  @include media(sm-a) {
+  @include media(md) {
     height: 50px;
   }
   .nav-projects-left {
@@ -31,7 +31,7 @@ header.nav-projects {
       display: flex;
       width: 90%;
     }
-    @include media(sm-a) {
+    @include media(md) {
       width: 50%;
       display: flex;
       justify-content: flex-end;
@@ -45,7 +45,7 @@ header.nav-projects {
       @include media(md-b) {
         justify-content: space-between;
       }
-      @include media(sm-a) {
+      @include media(md) {
         display: none;
         visibility: hidden;
       }
@@ -73,7 +73,7 @@ header.nav-projects {
     .mobile-projects-nav {
       display: none;
       visibility: hidden;
-      @include media(sm-a) {
+      @include media(md) {
         display: block;
         visibility: visible;
       }

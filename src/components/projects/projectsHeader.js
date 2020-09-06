@@ -60,29 +60,30 @@ export class ProjectsHeader extends Component {
             </ul>
             <div onClick={this.handleClick} className="mobile-projects-nav">
               <img src={lineMenu} alt="menu" />
+              {openProjectsMenu && <div className="mobile-projects-div">
+                <ul className="mobile-projects-ul">
+                  <Link to="/sumateALoVerde">
+                    <li>App Súmate a lo Verde</li>
+                  </Link>
+                  <Link to="/proyectoTitulo">
+                    <li>Proyecto Título</li>
+                  </Link>
+                  <Link to="/copec3d">
+                    <li>3D Copec</li>
+                  </Link>
+                  <Link to="/cafeteriaBHP">
+                    <li>Cafeteria BHP</li>
+                  </Link>
+                  <Link to="/patrem">
+                    <li>Proyecto Patrem</li>
+                  </Link>
+                </ul>
+              </div>}
             </div>
           </div>
         </header>
 
-        {openProjectsMenu && <div className="nav-mobile slide-in-right">
-          <ul>
-            <Link to="/sumateALoVerde">
-              <li>App Súmate a lo Verde</li>
-            </Link>
-            <Link to="/proyectoTitulo">
-              <li>Proyecto Título</li>
-            </Link>
-            <Link to="/copec3d">
-              <li>3D Copec</li>
-            </Link>
-            <Link to="/cafeteriaBHP">
-              <li>Cafeteria BHP</li>
-            </Link>
-            <Link to="/patrem">
-              <li>Proyecto Patrem</li>
-            </Link>
-          </ul>
-        </div>}
+        {/* slide-in-right */}
       </React.Fragment>
     )
   }

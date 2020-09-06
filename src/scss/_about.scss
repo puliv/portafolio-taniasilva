@@ -6,7 +6,6 @@
 }
 
 @mixin fontStyle() {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -142,6 +141,9 @@
     height: 50%;
     padding: 80px 100px 0px;
     @include centrado();
+    @include media(sm-a) {
+      padding: 70px 60px 0px;
+    }
     .about-title {
       height: 30%;
       display: flex;
@@ -150,10 +152,8 @@
       justify-content: flex-end;
       h3 {
         color: $color2;
+        text-align: center;
         @include fontStyle();
-        @include media(xs) {
-          text-align: center;
-        }
       }
       .about-detail {
         margin-bottom: 30px;
@@ -183,7 +183,7 @@
             align-items: flex-start;
           }
           @include media(sm) {
-            widows: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -194,6 +194,7 @@
             height: 122px;
             @include media(sm) {
               margin: 0 0 20px;
+              height: 150px;
             }
           }
         }

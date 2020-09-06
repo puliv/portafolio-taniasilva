@@ -19,6 +19,7 @@ export class ProjectsHeader extends Component {
     })
   }
 
+
   render() {
     const { openProjectsMenu } = this.state
     const back = "<<"
@@ -31,6 +32,28 @@ export class ProjectsHeader extends Component {
             </Link>
           </div>
           <div className="nav-projects-center">
+            <div className="mobile-projects-nav">
+              <img src={lineMenu} alt="menu" onClick={this.handleClick} />
+              {openProjectsMenu && <div className="mobile-projects-div slide-in-right">
+                <ul className="mobile-projects-ul">
+                  <Link to="/sumateALoVerde">
+                    <li>App Súmate a lo Verde</li>
+                  </Link>
+                  <Link to="/proyectoTitulo">
+                    <li>Proyecto Título</li>
+                  </Link>
+                  <Link to="/copec3d">
+                    <li>3D Copec</li>
+                  </Link>
+                  <Link to="/cafeteriaBHP">
+                    <li>Cafeteria BHP</li>
+                  </Link>
+                  <Link to="/patrem">
+                    <li>Proyecto Patrem</li>
+                  </Link>
+                </ul>
+              </div>}
+            </div>
             <ul>
               <Link to="/sumateALoVerde">
                 <li>
@@ -58,32 +81,8 @@ export class ProjectsHeader extends Component {
                 </li>
               </Link>
             </ul>
-            <div onClick={this.handleClick} className="mobile-projects-nav">
-              <img src={lineMenu} alt="menu" />
-              {openProjectsMenu && <div className="mobile-projects-div">
-                <ul className="mobile-projects-ul">
-                  <Link to="/sumateALoVerde">
-                    <li>App Súmate a lo Verde</li>
-                  </Link>
-                  <Link to="/proyectoTitulo">
-                    <li>Proyecto Título</li>
-                  </Link>
-                  <Link to="/copec3d">
-                    <li>3D Copec</li>
-                  </Link>
-                  <Link to="/cafeteriaBHP">
-                    <li>Cafeteria BHP</li>
-                  </Link>
-                  <Link to="/patrem">
-                    <li>Proyecto Patrem</li>
-                  </Link>
-                </ul>
-              </div>}
-            </div>
           </div>
         </header>
-
-        {/* slide-in-right */}
       </React.Fragment>
     )
   }

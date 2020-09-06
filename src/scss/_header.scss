@@ -7,9 +7,16 @@ header.nav {
   width: 100%;
   position: fixed;
   z-index: 1;
+  @include media(md) {
+    width: 100vw;
+    top: 0;
+  }
   .nav-left {
     width: 55%;
     margin: 0;
+    @include media(md) {
+      width: 85%;
+    }
     h1 {
       margin: 0 0 5px;
       padding-left: 10px;
@@ -22,11 +29,22 @@ header.nav {
   .nav-right {
     width: 45%;
     margin: 0;
+    @include media(md) {
+      width: 15%;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     ul {
       list-style: none;
       display: flex;
       justify-content: space-around;
       margin: 0;
+      @include media(md) {
+        display: none;
+        visibility: none;
+      }
       li {
         display: inline-block;
         margin: 0;
@@ -42,36 +60,7 @@ header.nav {
     }
     img {
       display: none;
-    }
-  }
-}
-
-.nav-mobile {
-  width: 0;
-  height: 100vh;
-  display: none;
-  visibility: hidden;
-}
-
-@media screen and (max-width: 920px) {
-  header.nav {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    .nav-left {
-      width: 85%;
-    }
-    .nav-right {
-      width: 15%;
-      visibility: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      ul {
-        display: none;
-        visibility: none;
-      }
-      img {
+      @include media(md) {
         display: block;
         visibility: visible;
         object-fit: contain;
@@ -81,8 +70,14 @@ header.nav {
       }
     }
   }
+}
 
-  div.nav-mobile {
+.nav-mobile {
+  width: 0;
+  height: 100vh;
+  display: none;
+  visibility: hidden;
+  @include media(md) {
     width: 200px;
     height: 100vh;
     visibility: visible;
@@ -92,18 +87,18 @@ header.nav {
     right: 0;
     z-index: 1;
     background-color: $color1;
-    ul {
-      list-style: none;
-      padding: 0px;
-      margin-bottom: 0;
-      transition: 300ms ease-out;
-      li {
-        margin: 50px 0px;
-        cursor: pointer;
-        color: $color2;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-      }
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0;
+    transition: 300ms ease-out;
+    li {
+      margin: 50px 0px;
+      cursor: pointer;
+      color: $color2;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
     }
   }
 }

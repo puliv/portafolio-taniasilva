@@ -70,39 +70,43 @@ header.nav-projects {
         }
       }
     }
-    .mobile-projects-nav {
-      display: none;
-      visibility: hidden;
-      @include media(md) {
-        display: block;
-        visibility: visible;
-      }
-      img {
-        width: 25px;
-      }
-      div.mobile-projects-div {
-        width: 50vw;
-        height: 100vh;
-        position: fixed;
-        margin: 0;
-        right: 0;
-        background-color: $color1;
-        ul.mobile-projects-ul {
-          list-style: none;
-          padding: 0px;
-          margin-bottom: 0;
-          display: block;
-          visibility: visible;
-          li {
-            text-align: start;
-            cursor: pointer;
-            color: $color2;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            padding-left: 20px;
-            padding-top: 20px;
-          }
-        }
+  }
+
+  .mobile-projects-nav {
+    display: none;
+    visibility: hidden;
+    @include media(md) {
+      display: block;
+      visibility: visible;
+    }
+    img {
+      width: 25px;
+    }
+  }
+  div.mobile-projects-div {
+    display: block;
+    visibility: visible;
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+    right: 0;
+    // top: 70;
+    background-color: $color1;
+    ul.mobile-projects-ul {
+      list-style: none;
+      padding: 0px;
+      margin-bottom: 0;
+      display: block;
+      visibility: visible;
+      li {
+        text-align: start;
+        cursor: pointer;
+        color: $color2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-top: 20px;
       }
     }
   }

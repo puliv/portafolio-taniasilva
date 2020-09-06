@@ -781,6 +781,9 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media only screen and (max-width: 480px) {
   html {

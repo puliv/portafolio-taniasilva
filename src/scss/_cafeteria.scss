@@ -27,7 +27,6 @@
       }
       span {
         text-align: justify;
-        font-family: Arial, Helvetica, sans-serif;
       }
     }
     .uno {
@@ -43,9 +42,6 @@
         padding-right: 25px;
         @include media(md) {
           width: 100%;
-        }
-        span {
-          font-family: Arial, Helvetica, sans-serif;
         }
       }
       .uno-img {
@@ -76,9 +72,6 @@
           width: 100%;
           padding-right: 0;
           margin-bottom: 20px;
-        }
-        span {
-          font-family: Arial, Helvetica, sans-serif;
         }
       }
       .dos-img {
@@ -123,10 +116,6 @@
         div {
           @include media(md) {
             align-items: flex-start;
-          }
-
-          span {
-            font-family: Arial, Helvetica, sans-serif;
           }
           h3 {
             color: $color2;

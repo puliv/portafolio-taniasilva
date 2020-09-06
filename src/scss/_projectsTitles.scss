@@ -23,6 +23,9 @@
     @include media(sm-a) {
       width: 50%;
     }
+    @include media(xs) {
+      padding-right: 20px;
+    }
     img {
       width: 70%;
       max-width: 250px;

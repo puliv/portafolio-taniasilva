@@ -1,20 +1,21 @@
 .cafeteria {
-  padding: 50px 100px;
+  padding: 30px 0px;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @include media(md) {
-    padding: 40px 80px;
-  }
-  @include media(sm-b) {
-    padding: 40px 70px;
-  }
-  @include media(sm) {
-    padding: 40px 50px;
-  }
-  div {
+  div.cafeteria-body {
+    padding: 0px 180px;
+    @include media(md-b) {
+      padding: 0 80px;
+    }
+    @include media(sm-b) {
+      padding: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 50px;
+    }
     .line {
       hr {
         width: 100%;
@@ -33,26 +34,26 @@
       margin-top: 30px;
       width: 100%;
       display: flex;
-      @include media(md) {
+      @include media(md-b) {
         flex-direction: column;
       }
       .uno-span {
         width: 65%;
         text-align: justify;
         padding-right: 25px;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
         }
       }
       .uno-img {
         width: 35%;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
           display: flex;
           justify-content: center;
         }
         img {
-          @include media(md) {
+          @include media(md-b) {
             width: 75%;
           }
         }
@@ -61,22 +62,24 @@
     .dos {
       width: 100%;
       display: flex;
-      @include media(md) {
+      margin-bottom: 30px;
+      @include media(md-b) {
         flex-direction: column;
+        margin-bottom: 0px;
       }
       .dos-span {
         width: 35%;
         text-align: justify;
         padding-right: 25px;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
           padding-right: 0;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
         }
       }
       .dos-img {
         width: 65%;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
         }
         img {
@@ -88,18 +91,18 @@
     .tres {
       width: 100%;
       display: flex;
-      @include media(md) {
+      @include media(md-b) {
         flex-direction: column-reverse;
       }
       .tres-img {
         width: 65%;
         max-width: 700px;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
           max-width: none;
         }
         img {
-          @include media(md) {
+          @include media(md-b) {
             width: 100%;
           }
         }
@@ -108,13 +111,13 @@
         width: 35%;
         text-align: justify;
         padding-left: 25px;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
           padding-left: 0;
           margin-bottom: 20px;
         }
         div {
-          @include media(md) {
+          @include media(md-b) {
             align-items: flex-start;
           }
           h3 {
@@ -126,11 +129,17 @@
       }
     }
     .cuatro {
-      width: 100%;
-      max-width: 700px;
+      width: 65%;
+      @include media(md-b) {
+        width: 100%;
+      }
       img {
         width: 100%;
         object-fit: contain;
+        max-width: 700px;
+        @include media(md-b) {
+          max-width: none;
+        }
       }
     }
   }

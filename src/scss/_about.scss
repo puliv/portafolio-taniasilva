@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0 0 20px 0;
   height: auto;
-
   .about-me {
     height: 50%;
     display: flex;
@@ -139,7 +138,7 @@
   .about-skills {
     width: 100%;
     height: 50%;
-    padding: 80px 100px 0px;
+    padding: 80px 150px 0px;
     @include centrado();
     @include media(sm-a) {
       padding: 70px 60px 0px;

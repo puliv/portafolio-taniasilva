@@ -1,23 +1,24 @@
 .sumate-verde {
-  padding: 50px 100px;
+  padding: 30px 0px;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @include media(md) {
-    padding: 40px 80px;
-  }
-  @include media(sm-b) {
-    padding: 40px 70px;
-  }
-  @include media(sm) {
-    padding: 40px 50px;
-  }
-  @include media(xs) {
-    padding: 40px 25px;
-  }
-  div {
+  div.verde-body {
+    padding: 0px 180px;
+    @include media(md) {
+      padding: 0 80px;
+    }
+    @include media(sm-b) {
+      padding: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 50px;
+    }
+    @include media(xs) {
+      padding: 0 25px;
+    }
     .uno {
       width: 100%;
       display: flex;
@@ -26,6 +27,9 @@
         width: 50%;
         text-align: justify;
         font-size: 20px;
+        @include media(md-b) {
+          width: 100%;
+        }
       }
     }
     .line {
@@ -45,15 +49,28 @@
     .dos {
       display: flex;
       margin-bottom: 50px;
+      @include media(md) {
+        flex-direction: column;
+      }
       div {
         width: 50%;
+        @include media(md) {
+          width: 100%;
+        }
       }
       .a {
         padding-right: 20px;
+        @include media(md) {
+          padding-right: 0px;
+        }
         img {
           object-fit: cover;
           width: 500px;
           height: 781px;
+          @include media(md) {
+            width: 100%;
+            height: auto;
+          }
         }
         hr {
           width: 40%;
@@ -70,6 +87,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include media(md) {
+          padding-left: 0px;
+          padding-top: 50px;
+        }
         .b-span {
           margin-bottom: 20px;
         }
@@ -126,10 +147,19 @@
     }
     .cuatro {
       display: flex;
+      @include media(md) {
+        flex-direction: column;
+      }
       div {
         width: 50%;
+        @include media(md) {
+          width: 100%;
+        }
       }
       .a {
+        @include media(md) {
+          padding-top: 30px;
+        }
         img {
           object-fit: scale-down;
         }
@@ -148,6 +178,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include media(md) {
+          padding-top: 30px;
+          padding-left: 0px;
+        }
         span {
           font-weight: lighter;
         }
@@ -157,9 +191,16 @@
       display: flex;
       margin: 30px 0 0;
       height: 650px;
+      @include media(md) {
+        flex-direction: column;
+        height: auto;
+      }
       .a {
         width: 40%;
         height: 100%;
+        @include media(md) {
+          width: 100%;
+        }
         img {
           max-height: 500px;
           width: 100%;
@@ -176,22 +217,35 @@
       }
       .b {
         width: 65%;
+        @include media(md) {
+          width: 100%;
+        }
         img {
           object-fit: contain;
           object-position: 100% 0;
           width: 100%;
           height: 100%;
           max-height: 500px;
+          @include media(md) {
+            margin-bottom: 0;
+          }
         }
         hr {
           width: 40%;
           height: 1px;
           background-color: $color2;
           margin-left: 30px;
+          @include media(md) {
+            width: 45%;
+            margin-left: 0px;
+          }
         }
         span {
           font-weight: lighter;
           margin-left: 30px;
+          @include media(md) {
+            margin-left: 0px;
+          }
         }
       }
     }
@@ -203,16 +257,30 @@
     }
     .siete {
       margin-bottom: 70px;
+      height: auto;
+      @include media(md) {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
       .siete-images {
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
+        @include media(md) {
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
         div {
+          width: 32%;
+          @include media(md) {
+            margin-bottom: 20px;
+            width: 100%;
+          }
           img {
             object-fit: cover;
-            width: 350px;
+            width: 100%;
             height: 100%;
-            max-height: 460px;
           }
           hr {
             width: 50%;
@@ -267,26 +335,55 @@
       .nueve-a {
         display: flex;
         justify-content: space-between;
+        @include media(md) {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
         div {
           width: 50%;
           text-align: justify;
           padding-right: 30px;
+          @include media(md) {
+            width: 100%;
+            padding-right: 0px;
+          }
         }
         div {
+          @include media(md) {
+            width: 100%;
+          }
           img {
             max-width: 450px;
+            @include media(md) {
+              max-width: none;
+              width: 100%;
+            }
           }
         }
       }
       .nueve-b {
         display: flex;
         justify-content: space-between;
+        @include media(md) {
+          justify-content: center;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
         div {
           width: 50%;
+          @include media(md) {
+            width: 100%;
+          }
           img {
             object-fit: contain;
             padding: 30px;
             max-width: 500px;
+            @include media(md) {
+              padding: 0px;
+              max-width: none;
+              width: 100%;
+            }
           }
           hr {
             width: 40%;
@@ -304,13 +401,27 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
+        @include media(md) {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
         div {
           width: 50%;
+          @include media(md) {
+            width: 100%;
+          }
           img {
             object-fit: contain;
             padding: 30px;
             max-width: 500px;
             height: 350px;
+            @include media(md) {
+              padding: 0px;
+              max-width: none;
+              width: 100%;
+              height: auto;
+            }
           }
           hr {
             width: 40%;
@@ -386,141 +497,6 @@
             width: 95%;
             @include media(sm-a) {
               width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 920px) {
-  .sumate-verde {
-    div {
-      .uno {
-        span {
-          width: 100%;
-        }
-      }
-      .dos {
-        display: flex;
-        flex-direction: column;
-        div {
-          width: 100%;
-        }
-        .a {
-          padding-right: 0px;
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-          }
-        }
-        .b {
-          padding-left: 0px;
-          padding-top: 50px;
-        }
-      }
-      .cuatro {
-        display: flex;
-        flex-direction: column;
-        div {
-          width: 100%;
-        }
-        .a {
-          padding-top: 30px;
-        }
-        .b {
-          padding-top: 30px;
-          padding-left: 0px;
-        }
-      }
-      .cinco {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 0 0;
-        height: auto;
-        .a {
-          width: 100%;
-        }
-        .b {
-          width: 100%;
-          img {
-            margin-bottom: 0;
-          }
-          hr {
-            width: 45%;
-            margin-left: 0px;
-          }
-          span {
-            margin-left: 0px;
-          }
-        }
-      }
-      .siete {
-        margin-bottom: 20px;
-        text-align: justify;
-        .siete-images {
-          display: flex;
-          flex-direction: column-reverse;
-          margin-top: 20px;
-          justify-content: center;
-          align-items: center;
-          div {
-            margin-bottom: 20px;
-            img {
-              object-fit: cover;
-              width: 100%;
-              height: 100%;
-              max-height: none;
-            }
-          }
-        }
-      }
-      .nueve {
-        .nueve-a {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          div {
-            width: 100%;
-            padding-right: 0px;
-          }
-          div {
-            img {
-              max-width: none;
-              width: 100%;
-            }
-          }
-        }
-        .nueve-b {
-          display: flex;
-          justify-content: center;
-          flex-direction: column-reverse;
-          align-items: center;
-          div {
-            width: 100%;
-            img {
-              padding: 0px;
-              max-width: none;
-              width: 100%;
-            }
-          }
-        }
-        .nueve-c {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 30px;
-          div {
-            width: 100%;
-            img {
-              object-fit: contain;
-              padding: 0px;
-              max-width: none;
-              width: 100%;
-              height: auto;
             }
           }
         }

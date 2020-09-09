@@ -27,8 +27,8 @@ import ProjectsHeader from "../components/projects/projectsHeader"
 const ProyectoTitulo = () => (
   <div className="proyecto-titulo">
     <ProjectsHeader />
-    <ProjectsTitle title={"Proyecto Título"} image={brika} />
-    <div>
+    <div className="proyecto-titulo-body">
+      <ProjectsTitle title={"Proyecto Título"} image={brika} />
       <div className="uno">
         <div>
           <span>El proyecto se realizó durante el año 2018, teniendo una primera instancia de evaluación en Julio y luego una segunda evaluación en enero del 2019, donde se defendió todo el proyecto: investigación, el producto realizado, uncional y testeado. Y por último la parte del marketing, es decir posicionamiento de marca y branding, finalizando todo el proyecto con una nota 7.0.

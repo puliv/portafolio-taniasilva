@@ -10,8 +10,8 @@ import ProjectsHeader from "../components/projects/projectsHeader"
 const Copec3d = () => (
   <div className="copec">
     <ProjectsHeader />
-    <ProjectsTitle title={"3D Copec"} image={copec} />
-    <div>
+    <div className="copec-body">
+      <ProjectsTitle title={"3D Copec"} image={copec} />
       <div className="uno">
         <div className="uno-span">
           <span>El proyecto para hacer un diseño de la cafetería de uno de los edificios de la empresa Copec, surge como petición para G°100 arquitectos, lugar donde realicé mi práctica profesional. La empresa se dedica a hacer diseños y rediseños de cocinas y cafeterías, además de tener un área de ejecución de los proyectos una vez son aprobados.

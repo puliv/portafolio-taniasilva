@@ -1,15 +1,19 @@
 header.nav-projects {
   background: $color1;
-  height: 70px;
+  height: 55px;
   width: 100%;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   @include media(md-b) {
     margin-bottom: 15px;
+    padding: 0 60px;
   }
   @include media(md) {
     height: 50px;
+  }
+  @include media(sm) {
+    padding: 0 30px;
   }
   .nav-projects-left {
     color: $color3;
@@ -17,7 +21,7 @@ header.nav-projects {
     display: flex;
     justify-content: flex-end;
     @include media(md-b) {
-      width: 5%;
+      justify-content: flex-start;
     }
     a {
       text-decoration: none;
@@ -26,7 +30,7 @@ header.nav-projects {
   }
   .nav-projects-center {
     display: flex;
-    width: 90%;
+    width: 95%;
     @include media(md-b) {
       display: flex;
       width: 90%;

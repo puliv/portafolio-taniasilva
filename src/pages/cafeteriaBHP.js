@@ -11,9 +11,9 @@ import ProjectsHeader from "../components/projects/projectsHeader"
 const CafeteriaBHP = () => (
   <div className="cafeteria">
     <ProjectsHeader />
-    <ProjectsTitle title={"Cafetería BHP"} image={BHP} />
 
-    <div>
+    <div className="cafeteria-body">
+      <ProjectsTitle title={"Cafetería BHP"} image={BHP} />
       <div className="uno">
         <div className="uno-span">
           <span>Se me asigna el proyecto Diseño de cafetería y comedor para la empresa Minera BHP. Fue un proyecto de gran responsabilidad, ya que trabaje solo yo trabaje en el desarrollo de este proyecto.</span>

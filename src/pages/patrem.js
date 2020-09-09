@@ -12,9 +12,9 @@ import ProjectsHeader from "../components/projects/projectsHeader"
 const Patrem = () => (
   <div className="patrem">
     <ProjectsHeader />
-    <ProjectsTitle title={"Proyecto Patrem"} image={patrem} />
 
-    <div>
+    <div className="patrem-body">
+      <ProjectsTitle title={"Proyecto Patrem"} image={patrem} />
       <div className="uno">
         <div className="uno-span">
           <div style={{ marginBottom: "15px" }}>

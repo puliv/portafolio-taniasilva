@@ -7,7 +7,10 @@
   justify-content: center;
   div.verde-body {
     padding: 0px 180px;
-    @include media(md) {
+    @include media(lg-b) {
+      padding: 0 240px;
+    }
+    @include media(md-b) {
       padding: 0 80px;
     }
     @include media(sm-b) {
@@ -95,7 +98,8 @@
           margin-bottom: 20px;
         }
         img {
-          object-fit: contain;
+          object-fit: cover;
+          height: 630px;
         }
         hr {
           width: 40%;
@@ -147,17 +151,17 @@
     }
     .cuatro {
       display: flex;
-      @include media(md) {
+      @include media(md-b) {
         flex-direction: column;
       }
       div {
         width: 50%;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
         }
       }
       .a {
-        @include media(md) {
+        @include media(md-b) {
           padding-top: 30px;
         }
         img {
@@ -178,7 +182,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @include media(md) {
+        @include media(md-b) {
           padding-top: 30px;
           padding-left: 0px;
         }
@@ -191,14 +195,14 @@
       display: flex;
       margin: 30px 0 0;
       height: 650px;
-      @include media(md) {
+      @include media(md-b) {
         flex-direction: column;
         height: auto;
       }
       .a {
         width: 40%;
         height: 100%;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
         }
         img {
@@ -217,7 +221,7 @@
       }
       .b {
         width: 65%;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
         }
         img {
@@ -226,7 +230,7 @@
           width: 100%;
           height: 100%;
           max-height: 500px;
-          @include media(md) {
+          @include media(md-b) {
             margin-bottom: 0;
           }
         }
@@ -235,7 +239,7 @@
           height: 1px;
           background-color: $color2;
           margin-left: 30px;
-          @include media(md) {
+          @include media(md-b) {
             width: 45%;
             margin-left: 0px;
           }
@@ -243,7 +247,7 @@
         span {
           font-weight: lighter;
           margin-left: 30px;
-          @include media(md) {
+          @include media(md-b) {
             margin-left: 0px;
           }
         }
@@ -256,9 +260,9 @@
       }
     }
     .siete {
-      margin-bottom: 70px;
+      margin-bottom: 130px;
       height: auto;
-      @include media(md) {
+      @include media(md-b) {
         margin-bottom: 20px;
         text-align: justify;
       }
@@ -266,14 +270,14 @@
         display: flex;
         margin-top: 20px;
         justify-content: space-between;
-        @include media(md) {
+        @include media(md-b) {
           flex-direction: column-reverse;
           justify-content: center;
           align-items: center;
         }
         div {
           width: 32%;
-          @include media(md) {
+          @include media(md-b) {
             margin-bottom: 20px;
             width: 100%;
           }
@@ -335,7 +339,7 @@
       .nueve-a {
         display: flex;
         justify-content: space-between;
-        @include media(md) {
+        @include media(md-b) {
           justify-content: center;
           flex-direction: column;
           align-items: center;
@@ -344,18 +348,18 @@
           width: 50%;
           text-align: justify;
           padding-right: 30px;
-          @include media(md) {
+          @include media(md-b) {
             width: 100%;
             padding-right: 0px;
           }
         }
         div {
-          @include media(md) {
+          @include media(md-b) {
             width: 100%;
           }
           img {
             max-width: 450px;
-            @include media(md) {
+            @include media(md-b) {
               max-width: none;
               width: 100%;
             }
@@ -365,21 +369,21 @@
       .nueve-b {
         display: flex;
         justify-content: space-between;
-        @include media(md) {
+        @include media(md-b) {
           justify-content: center;
           flex-direction: column-reverse;
           align-items: center;
         }
         div {
           width: 50%;
-          @include media(md) {
+          @include media(md-b) {
             width: 100%;
           }
           img {
             object-fit: contain;
             padding: 30px;
             max-width: 500px;
-            @include media(md) {
+            @include media(md-b) {
               padding: 0px;
               max-width: none;
               width: 100%;
@@ -401,14 +405,14 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
-        @include media(md) {
+        @include media(md-b) {
           justify-content: center;
           flex-direction: column;
           align-items: center;
         }
         div {
           width: 50%;
-          @include media(md) {
+          @include media(md-b) {
             width: 100%;
           }
           img {
@@ -416,7 +420,7 @@
             padding: 30px;
             max-width: 500px;
             height: 350px;
-            @include media(md) {
+            @include media(md-b) {
               padding: 0px;
               max-width: none;
               width: 100%;
@@ -440,7 +444,7 @@
       .diez-a {
         width: 100%;
         display: flex;
-        @include media(md) {
+        @include media(md-b) {
           width: 100%;
           flex-direction: column;
         }

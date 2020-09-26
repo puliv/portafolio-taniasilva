@@ -19,17 +19,17 @@ const Patrem = () => (
         <div className="uno-span">
           <div style={{ marginBottom: "15px" }}>
             <span >
-              El cliente solicita el rediseño de un espacio para convertirlo en una cafetería y lugar de almuerzo, para que así sus trabajadores no tengan que salir a comprar fuera del edificio de trabajo. Este proyecto no especificó ningún requerimiento de diseño.
+              Patrem es una consultora que ayuda a empresas y emprendedores a solucionar sus problemas estratégicos y de gestión.
           </span>
           </div>
           <div style={{ marginBottom: "15px" }}>
             <span >
-              En este caso no fue necesaria la creación de un layout por parte de los arquitectos, por lo que se empieza con el 3D y el diseño. Con fotografías básicas del lugar se hace una simulación del espacio. Primero se diseña la cafetería con ciertos toques característicos de la empresa como son las maderas en la pared.
+              La empresa solicitó la creación del templeit corporativo, el cual se utilizará para presentar le a los clientes qué es Patrem, qué es lo que hace y la metodología de trabajo que desarrolló y ocupa para dar soluciones a las empresas que solicitan el servicio.
           </span>
           </div>
           <div>
             <span>
-              Luego se diseña el espacio donde irán las mesas, agregando coherencia entre cafetería y el comedor. Finalmente se diseña el mueble y lugar donde irán los microondas.
+              Se me entrega la información y algunas referencias de esquemas que han estado utilizando. Ocupo los colores del logo y el recurso de degradado para la gráfica. Sintetizo la información, junto todos los esquemas en un mismo estilo gráfico y ocupo íconos para hacer más fácil la lectura.
           </span>
           </div>
         </div>
